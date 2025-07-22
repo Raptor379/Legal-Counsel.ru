@@ -1,0 +1,233 @@
+body{
+    display: flex;
+    flex-direction: column;
+    background-color: #070612;}
+.start{
+    background-image: url(images/start_background.svg);
+    display: flex;
+    align-items: start;
+    width: 100%;
+    min-height: 1024px;}
+        .start .container{
+            min-height: 612px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            width: 100%;}
+                header{
+                    min-height: 110px;
+                    width: 100%;
+                    display: flex;
+                    justify-content: space-between;
+                    padding: clamp(0px, 6.25vw, 120px);
+                    padding-top: 20px;
+                    flex-wrap: wrap;}
+                .Icon{
+                    width: 97px;
+                    height: 97px;}
+                        header article{
+                            display: flex;
+                            flex-wrap: wrap;
+                            justify-content: space-between;
+                            max-width: 390px;}
+                        header ul{
+                            display: flex;
+                            flex-wrap: wrap;
+                            gap: 50px;
+                            list-style: none;}
+.About{
+    background-image: url(images/About_background.svg);
+    width: 100%;
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+    max-width: 97%;}
+        .About_container{
+            width: 100%;
+            display: flex;
+            justify-content: right;}
+        .About nav{
+            display: flex;
+            flex-direction: column;
+            align-items: start;
+            max-width: 584px;
+            gap: 66px;
+            margin: 112px 0 112px 0px;
+            margin: clamp(0px, 2.1vw, 40px);}
+                        .About span{
+                            color: #87E7AD;}
+.Workers{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    margin: 50px 120px;
+    gap: 30px;}
+        .Workers h3{
+            color: #61CA88;
+            margin: 10px 0 0 0;}
+        .Workers article{
+            display: flex;
+            flex-direction: column;
+            gap: 15px;}
+        .worker{
+            border-radius: 40px;
+            width: 100%;}
+                .worker .card{
+                    position: relative;
+                    width: 100%;
+                    aspect-ratio: 3 / 4;
+                    transform-style: preserve-3d;
+                    transition: 0.8s;}
+                .worker:hover .card{
+                    transition: 0.8s;
+                    transform: rotateY(180deg);}
+                        .worker .front{
+                            background-image: url(images/Rybakov.jpg);}
+                        .worker .front, .worker .back{
+                            position: absolute;
+                            width: 100%;
+                            height: 100%;
+                            backface-visibility: hidden; 
+                            border-radius: 20px;}
+                        .worker .back{
+                        transform: rotateY(180deg);
+                        width: 100%;
+                        height: 100%;
+                        display: flex;
+                        background: linear-gradient(135deg, #87E7AD, #5AB99F, #2E4C59, #18153d);
+                        color: #070612;}
+                                .worker ul {
+                                    list-style-type: none;
+                                    color: #C0FFC0;
+                                    display: flex;
+                                    flex-direction: column;
+                                    justify-content: space-between;
+                                    height: 100%;
+                                    padding: 50px 10%;}
+                                        .worker li{
+                                            text-align: center;
+                                            background-color: #0706125b;
+                                            border-radius: 10px;
+                                            padding: 10px;
+                                            font-size: 35px;
+                                            font-weight: 800;
+                                            color: #fffafa;
+                                            text-shadow: rgba(0, 0, 0, 0.404) 2px 2px 8px;}
+.Service{
+    background-image: url(images/service_background.svg);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 105px;
+    padding: 128px 120px;
+    padding-top:clamp(0px, 6.7vw, 128px);
+    padding-bottom:clamp(0px, 6.7vw, 128px);
+    padding-left: clamp(0px, 6.25vw, 120px);
+    padding-right: clamp(0px, 6.25vw, 120px);
+}
+        .Service article{
+            display: flex;
+            flex-direction: column;
+            align-items: start;
+            max-width: 590px;}
+        .Service .container{
+            display: flex;
+            justify-content: left;
+            width: 100%;
+            text-indent: 10px;}
+                .Service aside {
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: space-between;
+                    width: 100%;
+                    align-items: start;}
+                        .Service .symbol{
+                            width: 80px;
+                            height: 80px;}
+                        .Service aside section{
+                            display: flex;
+                            flex-direction: column;
+                            align-items: start;
+                            max-width: 500px;
+                            padding: 0px 0px 40px 0px;}
+.Randomize{
+    display: flex;
+    display: none;
+    flex-direction: column;
+    gap: 12px;
+    padding: 100px 120px 60px 120px;}
+        .Randomize article{
+            display: flex;
+            flex-wrap: wrap;
+            gap: 18px;}
+                .Randomize section{
+                    display: flex;
+                    flex-direction: column;
+                    gap: 130px;}
+                        .Randomize div{
+                            display: flex;
+                            flex-direction: column;
+                            gap: 28px;
+                            margin: 0 19px;}
+.Contact{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: start;
+    justify-content: space-between;
+    width: 100%;
+    padding: clamp(10px, 5%, 120px);}
+        .Contact article{
+            display: flex;
+            align-items: start;
+            flex-direction: column;
+            gap: 80px;}
+                .Contact article section{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: start;}
+                .Contact nav{
+                    display: flex;
+                    flex-wrap: wrap;
+                    gap: 50px;}
+                        .Contact .geo{
+                            width: 100%;
+                            height: 100%;}
+#Message{
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+    gap: 60px;
+    width: 100%;
+    padding-left: clamp(10px, 5%, 120px);
+    padding-right: clamp(10px, 5%, 120px);
+    padding-bottom: clamp(10px, 5%, 120px);}
+        #Message aside{
+            display: flex;
+            justify-content: space-between;
+            align-items: end;
+            gap: 20px;
+            width: 100%;}
+                #Message div{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: start;
+                    width: 100%;}
+                #Message textarea{
+                    overflow: hidden;
+                    outline: none;
+                    background-color: #d8fff0;
+                    color: #070612;
+                    font-size: 30px;
+                    border: 15px solid transparent;
+                    border-image: linear-gradient(45deg, #87E7AD 40%, #1F565F 70%) 1;}
+                #MessagePool{
+                    width: 100%;
+                    max-width: 1022px;
+                    min-height: 300px;}
+                #Email{
+                    width: 100%;
+                    max-width: 700px;}
+        #MessageWrong{
+            display: none;
+            color: rgb(255, 60, 60);}

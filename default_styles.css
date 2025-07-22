@@ -1,0 +1,133 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: 0;
+    justify-content: center;
+    align-items: center;
+    color: #E9E9EC;
+    text-decoration: none;
+    font-family: "Finlandica";
+    resize: none;
+}
+
+mark{
+    background: none;
+}
+
+h1{
+    font-size: 76px;
+    color: #FFFFFF;
+    font-family: 'Roboto';
+}
+
+h2, h5{
+    font-size: 64px;
+    font-weight: 700;
+    color: #87E7AD;
+    font-family: 'Lora';
+}
+
+h3{
+    font-size: 48px;
+    font-weight: 700;
+    color: #FFFFFF;
+    font-family: 'Open Sans';
+}
+
+h4{
+    font-size: 30px;
+    font-weight: 700;
+    color: #FFFFFF;
+    font-family: 'Open Sans';
+}
+
+h5{
+    font-family: 'Arimo';
+    background: linear-gradient(45deg, #87E7AD, #1F565F);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    font-family: 'Open Sans';
+}
+
+p{
+    font-size: 24px;
+    font-weight: 400;
+    font-family: 'Arimo';
+    color: #FFFFFF;
+    font-family: 'Open Sans';
+}
+
+button{
+    display: flex;
+    border-radius: 5px;
+    background: #1F565F;
+    cursor: pointer;
+}
+
+button .inside{
+    margin: 15px 15px;
+    padding: 20px 20px;
+    border-radius: 5px;
+    background-color: #0706129c;
+    transition: 0.3s;
+}
+
+button:hover .inside{
+    background-color: #070612d8;
+    transition: 0.3s;
+}
+
+button:active .inside{
+    background-color: #15123a;
+    transition: 0.3s;
+}
+
+button:active .inside h3{
+    color: #87E7AD;
+}
+
+.background{
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.frame-container{
+    display: inline-flex;
+    position: relative;
+    justify-content: left;
+    align-items: end;
+    margin: 25px 0 30px 0;
+}
+
+.frame-top, .frame-top-left{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: start;
+    justify-content: right;
+}
+
+.frame-top-left{
+    justify-content: left;
+}
+
+.frame-bottom{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: end;
+    justify-content: left;
+}
+
+.frame-container .main{
+    display: inline-block;
+    padding: 10px;
+}
+
+img{
+    pointer-events: none;
+}
